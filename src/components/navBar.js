@@ -6,13 +6,37 @@ class NavBar extends React.Component {
 
     this.state = {
       loading: true,
+      navOpened: false,
     };
   }
 
+  componentDidMount() {
+    this.setState({
+      loading: false,
+    });
+  }
+
   render() {
-    return (
-      <div className="navBar">
-        <div className="logo">Logo</div>
+    return this.state.loading ? (
+      <div className="loading">Loading</div>
+    ) : (
+      <div className={this.state.navOpened ? "navBar opened" : "navBar"}>
+        <div className="mbHeader">
+          <div className="logo">Logo</div>
+          <div className="burger">
+            <input
+              type="checkbox"
+              id="toggle"
+              className="burger"
+              onClick={(ev) =>
+                this.setState({ navOpened: !this.state.navOpened })
+              }
+            />
+            <label className="bar1" htmlFor="toggle" />
+            <label className="bar2" htmlFor="toggle" />
+            <label className="bar3" htmlFor="toggle" />
+          </div>
+        </div>
         <div className="navigation">
           <ul>
             <li>Home</li>
