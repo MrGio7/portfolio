@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import { NavBar } from "./components";
+import { NavBar, Home } from "./components";
 
 
 class App extends React.Component {
@@ -22,9 +22,9 @@ class App extends React.Component {
       <div className="loading">Loading</div>
     ) : (
       <div className="App">
+        <NavBar />
         <Routes>
-          <Route path="/" element={<NavBar />} />
-          <Route path="/about" element={<div />} />
+          <Route path="/" element={<Home />} />
         </Routes>
       </div>
     );
