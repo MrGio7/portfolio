@@ -1,23 +1,31 @@
-import React from 'react';
+import React from "react";
+import { Routes, Route, Link } from "react-router-dom";
+import { NavBar } from "./components";
 
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      loading: true,
+    };
+  }
+
+  componentDidMount() {
+    this.setState({
+      loading: false
+    })
+  }
+
   render() {
-    return (
+    return this.state.loading ? (
+      <div className="loading">Loading</div>
+    ) : (
       <div className="App">
-        <div className="navBar">
-          <div className="logo">Logo</div>
-          <div className="navigation">
-            <ul>
-              <li>Home</li>
-              <li>Education</li>
-              <li>Experience</li>
-              <li>Projects</li>
-              <li>Contact Me</li>
-              <li>Language</li>
-            </ul>
-          </div>
-        </div>
+        <Routes>
+          <Route path="/" element={<NavBar />} />
+          <Route path="/about" element={<div />} />
+        </Routes>
       </div>
     );
   }
