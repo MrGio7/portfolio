@@ -18,11 +18,63 @@
             color: $darkLiver;
             font-size: 1rem;
             border-radius: 5px;
+
+            h1{
+                font-size: 2rem;
+                font-weight: bold;
+                width: 100%;
+                text-align: center;
+            }
+
+            p{
+                font-size: 1rem;
+                font-weight: bold;
+                margin-top: 0.5rem;
+            }
+
+            .social{
+                width: 100%;
+                height: max-content;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 0 1.5rem;
+                margin-top: 1rem;
+
+                svg{
+                    font-size: 2rem;
+                }
+
+                .github{
+                    color: #161b22;
+                }
+
+                .linkedin{
+                    color:#0a66c2;
+                }
+
+                .google{
+                    color:#d24736;
+                }
+
+                .twitter{
+                    color:#0597e9;
+                }
+
+                .facebook{
+                    color:#3f62a9;
+                }
+
+                .instagram{
+                    color: #e44160;
+                }
+
+            }
         }
 
         #tsparticles{
-            width: 100%;
-            height: 200vw;
+            width: 100vw;
+            height: 100vw;
 
             canvas{
                 position: relative !important;

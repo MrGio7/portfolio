@@ -1,6 +1,15 @@
 import React from "react";
 import greetingImg from "../../assets/img/greeting.jpg";
 import Particles from "react-tsparticles";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGithubSquare,
+  faLinkedin,
+  faGooglePlusSquare,
+  faTwitterSquare,
+  faFacebookSquare,
+  faInstagramSquare,
+} from "@fortawesome/free-brands-svg-icons";
 
 class Home extends React.Component {
   constructor(props) {
@@ -22,6 +31,14 @@ class Home extends React.Component {
               products which develop sustainable and scalable social and
               technical systems to create impact.
             </p>
+            <div className="social">
+              <FontAwesomeIcon icon={faGithubSquare} className="github" />
+              <FontAwesomeIcon icon={faLinkedin} className="linkedin" />
+              <FontAwesomeIcon icon={faGooglePlusSquare} className="google" />
+              <FontAwesomeIcon icon={faTwitterSquare} className="twitter" />
+              <FontAwesomeIcon icon={faFacebookSquare} className="facebook" />
+              <FontAwesomeIcon icon={faInstagramSquare} className="instagram" />
+            </div>
           </div>
           <Particles
             id="tsparticles"
