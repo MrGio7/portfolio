@@ -1,25 +1,8 @@
 import React from "react";
 import greetingImg from "../../assets/img/greeting.jpg";
+import serverImg from "../../assets/img/server.jpg";
 import Particles from "react-tsparticles";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faGithubSquare,
-  faLinkedin,
-  faGooglePlusSquare,
-  faTwitterSquare,
-  faFacebookSquare,
-  faInstagramSquare,
-  faHtml5,
-  faCss3,
-  faSass,
-  faJsSquare,
-  faReact,
-  faNodeJs,
-  faNpm,
-  faYarn,
-  faPython,
-  faPhp
-} from "@fortawesome/free-brands-svg-icons";
+import { Icon } from '@iconify/react';
 
 class Home extends React.Component {
   constructor(props) {
@@ -42,12 +25,12 @@ class Home extends React.Component {
               technical systems to create impact.
             </p>
             <div className="social">
-              <FontAwesomeIcon icon={faGithubSquare} className="github" />
-              <FontAwesomeIcon icon={faLinkedin} className="linkedin" />
-              <FontAwesomeIcon icon={faGooglePlusSquare} className="google" />
-              <FontAwesomeIcon icon={faTwitterSquare} className="twitter" />
-              <FontAwesomeIcon icon={faFacebookSquare} className="facebook" />
-              <FontAwesomeIcon icon={faInstagramSquare} className="instagram" />
+              <Icon icon="zmdi:github-box" />
+              <Icon icon="logos:linkedin-icon" />
+              <Icon icon="logos:google-gmail" />
+              <Icon icon="logos:twitter" />
+              <Icon icon="logos:facebook" />
+              <Icon icon="logos:instagram-icon" />
             </div>
           </div>
           <Particles
@@ -158,20 +141,41 @@ class Home extends React.Component {
             <div className="webDev">
               <h1>Full Stack Development</h1>
               <div className="logos">
-                <FontAwesomeIcon icon={faHtml5} />
-                <FontAwesomeIcon icon={faPhp}  />
-                <FontAwesomeIcon icon={faCss3}  />
-                <FontAwesomeIcon icon={faSass} />
-                <FontAwesomeIcon icon={faJsSquare}  />
-                <FontAwesomeIcon icon={faReact}  />
-                <FontAwesomeIcon icon={faNodeJs}  />
-                <span className="fa-layers fa-fw">
-                  <FontAwesomeIcon icon={faPython} className="first" />
-                  <FontAwesomeIcon icon={faPython}  className="second" />
-                </span>
-                <FontAwesomeIcon icon={faNpm} />
-                <FontAwesomeIcon icon={faYarn}  />
+                <Icon icon="logos:html-5" />
+                <Icon icon="logos:php" />
+                <Icon icon="logos:css-3" />
+                <Icon icon="logos:sass" />
+                <Icon icon="logos:javascript" />
+                <Icon icon="logos:react" />
+                <Icon icon="logos:nodejs-icon" />
+                <Icon icon="logos:python" />
+                <Icon icon="logos:sqlite" />
+                <Icon icon="logos:mysql" />
+                <Icon icon="logos:mongodb" />
+                <Icon icon="logos:npm-icon" />
+                <Icon icon="logos:yarn" />
               </div>
+              <ul>
+                <li>&#128073;Building resposive website front end using React-Redux</li>
+                <li>&#128073;Creating application backend in Node, Express</li>
+                <li>&#128073;Developing mobile applications using Flutter, React Native</li>
+              </ul>
+            </div>
+            <div className="cloud">
+              <h1>Cloud Infra-Architecture</h1>
+              <div className="logos">
+                <Icon icon="logos:google-cloud" />
+                <Icon icon="logos:aws" />
+                <Icon icon="logos:azure-icon" />
+                <Icon icon="logos:firebase" />
+              </div>
+              <ul>
+                <li>Experience working on multiple cloud platforms</li>
+                <li>Hosting and maintaining websites on virtual machine instances along with integration of databases</li>
+                <li>Deploying deep learning models on cloud to use on mobile devices</li>
+                <li>Setting up streaming jobs from DB to Server or vice-versa on GCP and AWS</li>
+              </ul>
+              <img src={serverImg} alt="cloud" />
             </div>
           </div>
         </div>
