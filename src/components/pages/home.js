@@ -9,6 +9,16 @@ import {
   faTwitterSquare,
   faFacebookSquare,
   faInstagramSquare,
+  faHtml5,
+  faCss3,
+  faSass,
+  faJsSquare,
+  faReact,
+  faNodeJs,
+  faNpm,
+  faYarn,
+  faPython,
+  faPhp
 } from "@fortawesome/free-brands-svg-icons";
 
 class Home extends React.Component {
@@ -141,6 +151,29 @@ class Home extends React.Component {
               },
             }}
           />
+        </div>
+        <div className="main">
+          <h1>What I Do?</h1>
+          <div className="skills">
+            <div className="webDev">
+              <h1>Full Stack Development</h1>
+              <div className="logos">
+                <FontAwesomeIcon icon={faHtml5} />
+                <FontAwesomeIcon icon={faPhp}  />
+                <FontAwesomeIcon icon={faCss3}  />
+                <FontAwesomeIcon icon={faSass} />
+                <FontAwesomeIcon icon={faJsSquare}  />
+                <FontAwesomeIcon icon={faReact}  />
+                <FontAwesomeIcon icon={faNodeJs}  />
+                <span className="fa-layers fa-fw">
+                  <FontAwesomeIcon icon={faPython} className="first" />
+                  <FontAwesomeIcon icon={faPython}  className="second" />
+                </span>
+                <FontAwesomeIcon icon={faNpm} />
+                <FontAwesomeIcon icon={faYarn}  />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     );

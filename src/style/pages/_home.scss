@@ -82,4 +82,98 @@
         }
         
     }
+
+    .main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1{
+            width: 90%;
+            text-align: center;
+            font-size: 4rem;
+        }
+
+        .skills{
+            width: 90%;
+
+            .webDev{
+                h1{
+                    width: 100%;
+                    font-size: 2rem;
+                }
+
+                .logos{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
+
+                    span{
+                        width: max-content;
+                        height: max-content;
+                        position: relative;
+
+                        .first{
+                            position: absolute;
+                            color: #ffd644;
+                        }
+
+                        .second{
+                            color: #356d9d;
+                            clip-path: polygon(100% 0, 76% 25%, 73% 48%, 27% 52%, 23% 75%, 0 100%, 0 0);
+                        }
+
+                    }
+
+                    svg{
+                        font-size: 4rem;
+                        margin:0.5rem;
+                        position: relative;
+                    }
+
+                    .fa-html5{
+                        color: #dd4b25;
+                    }
+
+                    .fa-php{
+                        color: #4d588e;
+                    }
+
+                    .fa-css3{
+                        color: #1672b6;
+                    }
+
+                    .fa-sass{
+                        color: #cc6799;
+                    }
+
+                    .fa-js-square{
+                        color: #f7df1f;
+                    }
+
+                    .fa-react{
+                        color: #62dafb;
+                    }
+
+                    .fa-node-js {
+                        color: #349934;
+                    }
+
+                    .fa-npm{
+                        color: #cb3938;
+                    }
+
+                    .fa-yarn{
+                        color: #2d8ebb;
+                    }
+
+                    
+                }
+            }
+        }
+    }
 }
