@@ -33,6 +33,7 @@ class Home extends React.Component {
               <Icon icon="logos:instagram-icon" />
             </div>
           </div>
+          <div className="particlesOne">
           <Particles
             id="tsparticles"
             options={{
@@ -134,6 +135,7 @@ class Home extends React.Component {
               },
             }}
           />
+          </div>
         </div>
         <div className="main">
           <h1>What I Do?</h1>
@@ -175,7 +177,109 @@ class Home extends React.Component {
                 <li>Deploying deep learning models on cloud to use on mobile devices</li>
                 <li>Setting up streaming jobs from DB to Server or vice-versa on GCP and AWS</li>
               </ul>
-              <img src={serverImg} alt="cloud" />
+              <div className="particlesTwo">
+          <Particles
+            id="tsparticlestwo"
+            options={{
+              position: "relative",
+              background: {
+                color: {
+                  value: "#ffffff",
+                },
+                image: `url(${serverImg})`,
+                position: "relative",
+                repeat: "no-repeat",
+                size: "cover",
+              },
+              backgroundMask: {
+                cover: {
+                  color: {
+                    value: "#32144f",
+                  },
+                },
+                enable: true,
+              },
+              interactivity: {
+                events: {
+                  onClick: {
+                    enable: true,
+                    mode: "push",
+                  },
+                  onHover: {
+                    enable: true,
+                    mode: "bubble",
+                    parallax: {
+                      force: 60,
+                    },
+                  },
+                },
+                modes: {
+                  bubble: {
+                    distance: 400,
+                    duration: 2,
+                    opacity: 1,
+                    size: 100,
+                  },
+                  grab: {
+                    distance: 400,
+                  },
+                },
+              },
+              particles: {
+                color: {
+                  value: "#ffffff",
+                },
+                links: {
+                  color: {
+                    value: "#ffffff",
+                  },
+                  distance: 150,
+                  enable: true,
+                },
+                move: {
+                  attract: {
+                    rotate: {
+                      x: 600,
+                      y: 1200,
+                    },
+                  },
+                  enable: true,
+                  outModes: {
+                    bottom: "out",
+                    left: "out",
+                    right: "out",
+                    top: "out",
+                  },
+                },
+                number: {
+                  density: {
+                    enable: true,
+                  },
+                  value: 80,
+                },
+                opacity: {
+                  animation: {
+                    speed: 1,
+                    minimumValue: 0.1,
+                  },
+                },
+                size: {
+                  random: {
+                    enable: true,
+                  },
+                  value: {
+                    min: 1,
+                    max: 30,
+                  },
+                  animation: {
+                    speed: 40,
+                    minimumValue: 0.1,
+                  },
+                },
+              },
+            }}
+          />
+          </div>
             </div>
           </div>
         </div>

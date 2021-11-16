@@ -72,12 +72,19 @@
             }
         }
 
-        #tsparticles{
+        .particlesOne{
             width: 100vw;
             height: 100vw;
+            position: relative;
 
-            canvas{
-                position: relative !important;
+            #tsparticles{
+                width: 100vw;
+                height: 100vw;
+                position: absolute !important;
+
+                canvas{
+                    position: relative !important;
+                }
             }
         }
         
@@ -160,8 +167,26 @@
                     }
                 }
 
-                img{
-                    width: 100%;
+                .serverImg{
+                    width: 100vw;
+                    height: 56.25vw;
+                    background-size: cover;
+                }
+
+                .particlesTwo{
+                    width: 100vw;
+                    height: 100vw;
+                    position: relative;
+        
+                    #tsparticlestwo{
+                        width: 100vw;
+                        height: 100vw;
+                        position: absolute !important;
+        
+                        canvas{
+                            position: relative !important;
+                        }
+                    }
                 }
 
             }
