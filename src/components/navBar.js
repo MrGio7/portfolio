@@ -37,10 +37,10 @@ class NavBar extends React.Component {
         </div>
         <div className="navigation">
           <nav>
-            <Link to="/" onClick={(ev) => this.setState({ navOpened: false })}>
+            <Link to="/" onClick={() => this.setState({ navOpened: false })}>
               Home
             </Link>
-            <Link to="experience">Experience</Link>
+            <Link to="experience" onClick={() => this.setState({ navOpened: false })}>Experience</Link>
             {/* <Link>Education</Link>
             <Link>Experience</Link>
             <Link>Projects</Link>
