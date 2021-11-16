@@ -1,5 +1,11 @@
+@use "../variables" as *;
+
 .experience {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     .expCard{
         width: 100%;
@@ -7,27 +13,48 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
-
+        
         img{
             width: 100%;
         }
 
-        h1{
+        .text{
             width: 90%;
-            font-size: 2rem;
-            text-align: center;
+    
+            h1{
+                font-size: 2rem;
+                text-align: center;
+            }
+    
+            h2{
+                font-size: 1.5rem;
+                text-align: center;
+            }
+    
+            p{
+                font-size: 1rem;
+            }
         }
 
-        h2{
-            width: 90%;
-            font-size: 1.5rem;
-            text-align: center;
-        }
 
-        p{
+        
+    }
+}
+
+@media (min-width: $mobile) {
+    .experience{
+        .expCard{
             width: 90%;
-            font-size: 1rem;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+
+            img{
+                width: 45%;
+            }
+
+            .text{
+                width: 45%;
+            }
         }
     }
 }
