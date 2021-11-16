@@ -58,7 +58,7 @@ class Home extends React.Component {
               interactivity: {
                 events: {
                   onClick: {
-                    enable: true,
+                    enable: false,
                     mode: "push",
                   },
                   onHover: {
@@ -202,7 +202,7 @@ class Home extends React.Component {
               interactivity: {
                 events: {
                   onClick: {
-                    enable: true,
+                    enable: false,
                     mode: "push",
                   },
                   onHover: {

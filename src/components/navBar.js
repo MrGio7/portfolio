@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 class NavBar extends React.Component {
   constructor(props) {
@@ -23,29 +24,29 @@ class NavBar extends React.Component {
       <div className={this.state.navOpened ? "navBar opened" : "navBar"}>
         <div className="mbHeader">
           <div className="logo">Logo</div>
-          <div className="burger">
-            <input
-              type="checkbox"
-              id="toggle"
-              className="burger"
-              onClick={(ev) =>
-                this.setState({ navOpened: !this.state.navOpened })
-              }
-            />
-            <label className="bar1" htmlFor="toggle" />
-            <label className="bar2" htmlFor="toggle" />
-            <label className="bar3" htmlFor="toggle" />
+          <div
+            className={this.state.navOpened ? "burger opened" : "burger"}
+            onClick={(ev) =>
+              this.setState({ navOpened: !this.state.navOpened })
+            }
+          >
+            <div className="bar1" />
+            <div className="bar2" />
+            <div className="bar3" />
           </div>
         </div>
         <div className="navigation">
-          <ul>
-            <li>Home</li>
-            <li>Education</li>
-            <li>Experience</li>
-            <li>Projects</li>
-            <li>Contact Me</li>
-            <li>Language</li>
-          </ul>
+          <nav>
+            <Link to="/" onClick={(ev) => this.setState({ navOpened: false })}>
+              Home
+            </Link>
+            <Link to="experience">Experience</Link>
+            {/* <Link>Education</Link>
+            <Link>Experience</Link>
+            <Link>Projects</Link>
+            <Link>Contact Me</Link>
+            <Link>Language</Link> */}
+          </nav>
         </div>
       </div>
     );
