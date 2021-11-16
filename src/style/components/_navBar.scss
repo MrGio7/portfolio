@@ -82,3 +82,45 @@
         }
     }
 }
+
+@media (min-width: $mobile) {
+    .navBar{
+        flex-direction: row;
+        width: 90%;
+        margin:0 auto;
+    
+        .mbHeader{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            
+            .logo{
+                padding: 0;
+            }
+            .burger{
+                display: none;
+            }
+        }
+    
+        .navigation{
+            max-height: max-content;
+    
+            .list{
+                width: 100%;
+                flex-direction: row;
+    
+                a{
+                    width: 100%;
+                    padding: 0.5rem;
+                    margin-left: 0.5rem;
+                }
+            }
+        }
+        
+        &.opened{
+            .navigation{
+                max-height: 300px;
+            }
+        }
+    }
+}
