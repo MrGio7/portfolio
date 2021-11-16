@@ -22,8 +22,10 @@ class Projects extends React.Component {
       <div className="projects">
         <div className="projectsCard">
             <img src={projectsImg} alt="projects" />
-            <h1>Projects</h1>
-            <p>My projects makes use of vast variety of latest technology tools. My best experience is to create Data Science projects and deploy them to web applications using cloud infrastructure.</p>
+            <div className="text">
+              <h1>Projects</h1>
+              <p>My projects makes use of vast variety of latest technology tools. My best experience is to create Data Science projects and deploy them to web applications using cloud infrastructure.</p>
+            </div>
         </div>
         <div className="projList">
             <div className="card">
