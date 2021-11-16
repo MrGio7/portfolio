@@ -1,5 +1,6 @@
 import React from "react";
 import greetingImg from "../../assets/img/greeting.jpg";
+import codeImg from "../../assets/img/code.jpg";
 import serverImg from "../../assets/img/server.jpg";
 import Particles from "react-tsparticles";
 import { Icon } from '@iconify/react';
@@ -141,6 +142,7 @@ class Home extends React.Component {
           <h1>What I Do?</h1>
           <div className="skills">
             <div className="webDev">
+              <div className="text">
               <h1>Full Stack Development</h1>
               <div className="logos">
                 <Icon icon="logos:html-5" />
@@ -162,21 +164,127 @@ class Home extends React.Component {
                 <li>&#128073;Creating application backend in Node, Express</li>
                 <li>&#128073;Developing mobile applications using Flutter, React Native</li>
               </ul>
+              </div>
+              <div className="particlesThree">
+          <Particles
+            id="tsparticlesthree"
+            options={{
+              position: "relative",
+              background: {
+                color: {
+                  value: "#ffffff",
+                },
+                image: `url(${codeImg})`,
+                position: "relative",
+                repeat: "no-repeat",
+                size: "cover",
+              },
+              backgroundMask: {
+                cover: {
+                  color: {
+                    value: "#32144f",
+                  },
+                },
+                enable: true,
+              },
+              interactivity: {
+                events: {
+                  onClick: {
+                    enable: false,
+                    mode: "push",
+                  },
+                  onHover: {
+                    enable: true,
+                    mode: "bubble",
+                    parallax: {
+                      force: 60,
+                    },
+                  },
+                },
+                modes: {
+                  bubble: {
+                    distance: 400,
+                    duration: 2,
+                    opacity: 1,
+                    size: 100,
+                  },
+                  grab: {
+                    distance: 400,
+                  },
+                },
+              },
+              particles: {
+                color: {
+                  value: "#ffffff",
+                },
+                links: {
+                  color: {
+                    value: "#ffffff",
+                  },
+                  distance: 150,
+                  enable: true,
+                },
+                move: {
+                  attract: {
+                    rotate: {
+                      x: 600,
+                      y: 1200,
+                    },
+                  },
+                  enable: true,
+                  outModes: {
+                    bottom: "out",
+                    left: "out",
+                    right: "out",
+                    top: "out",
+                  },
+                },
+                number: {
+                  density: {
+                    enable: true,
+                  },
+                  value: 80,
+                },
+                opacity: {
+                  animation: {
+                    speed: 1,
+                    minimumValue: 0.1,
+                  },
+                },
+                size: {
+                  random: {
+                    enable: true,
+                  },
+                  value: {
+                    min: 1,
+                    max: 30,
+                  },
+                  animation: {
+                    speed: 40,
+                    minimumValue: 0.1,
+                  },
+                },
+              },
+            }}
+          />
+              </div>
             </div>
             <div className="cloud">
-              <h1>Cloud Infra-Architecture</h1>
-              <div className="logos">
-                <Icon icon="logos:google-cloud" />
-                <Icon icon="logos:aws" />
-                <Icon icon="logos:azure-icon" />
-                <Icon icon="logos:firebase" />
+              <div className="text">
+                <h1>Cloud Infra-Architecture</h1>
+                <div className="logos">
+                  <Icon icon="logos:google-cloud" />
+                  <Icon icon="logos:aws" />
+                  <Icon icon="logos:azure-icon" />
+                  <Icon icon="logos:firebase" />
+                </div>
+                <ul>
+                  <li>&#128073;Experience working on multiple cloud platforms</li>
+                  <li>&#128073;Hosting and maintaining websites on virtual machine instances along with integration of databases</li>
+                  <li>&#128073;Deploying deep learning models on cloud to use on mobile devices</li>
+                  <li>&#128073;Setting up streaming jobs from DB to Server or vice-versa on GCP and AWS</li>
+                </ul>
               </div>
-              <ul>
-                <li>&#128073;Experience working on multiple cloud platforms</li>
-                <li>&#128073;Hosting and maintaining websites on virtual machine instances along with integration of databases</li>
-                <li>&#128073;Deploying deep learning models on cloud to use on mobile devices</li>
-                <li>&#128073;Setting up streaming jobs from DB to Server or vice-versa on GCP and AWS</li>
-              </ul>
               <div className="particlesTwo">
           <Particles
             id="tsparticlestwo"
@@ -279,7 +387,7 @@ class Home extends React.Component {
               },
             }}
           />
-          </div>
+              </div>
             </div>
           </div>
         </div>

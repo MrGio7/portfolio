@@ -2,6 +2,10 @@
 
 .home{
     width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     .greeting{
         width: 100%;
@@ -44,31 +48,6 @@
                 svg{
                     font-size: 2rem;
                 }
-
-                .github{
-                    color: #161b22;
-                }
-
-                .linkedin{
-                    color:#0a66c2;
-                }
-
-                .google{
-                    color:#d24736;
-                }
-
-                .twitter{
-                    color:#0597e9;
-                }
-
-                .facebook{
-                    color:#3f62a9;
-                }
-
-                .instagram{
-                    color: #e44160;
-                }
-
             }
         }
 
@@ -111,34 +90,59 @@
             align-items: center;
 
             .webDev{
-                width: 90%;
-                h1{
-                    width: 100%;
-                    font-size: 2rem;
-                }
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
 
-                .logos{
-                    width: 100%;
-                    display: flex;
-                    flex-direction: row;
-                    flex-wrap: wrap;
-                    justify-content: space-evenly;
+                .text{
+                    width: 90%;
 
-                    svg{
-                        font-size: 4rem;
-                        margin:0.5rem;
-                        position: relative;
+                    h1{
+                        width: 100%;
+                        font-size: 2rem;
+                    }
+    
+                    .logos{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: space-evenly;
+    
+                        svg{
+                            font-size: 4rem;
+                            margin:0.5rem;
+                            position: relative;
+                        }
+                    }
+    
+                    ul{
+                        li{
+                            font-size: 1.2rem;
+                            margin-top: 1rem;
+                        }
                     }
                 }
+                
 
-                ul{
-                    li{
-                        font-size: 1.2rem;
-                        margin-top: 1rem;
+                .particlesThree{
+                    width: 100vw;
+                    height: 100vw;
+                    position: relative;
+        
+                    #tsparticlesthree{
+                        width: 100vw;
+                        height: 100vw;
+                        position: absolute !important;
+        
+                        canvas{
+                            position: relative !important;
+                        }
                     }
                 }
             }
-        }
 
             .cloud{
                 width: 100%;
@@ -146,38 +150,41 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                margin-top: 2rem;
-
-                h1{
-                    font-size: 3rem;
-                }
-
-                .logos{
+                
+                .text{
                     width: 90%;
-                    display: flex;
-                    flex-direction: row;
-                    flex-wrap: wrap;
-                    justify-content: space-evenly;
-
-                    svg{
+                    padding: 1rem 0.5rem;
+                    color: $darkLiver;
+                    font-size: 1rem;
+                    border-radius: 5px;
+                
+                    h1{
                         font-size: 3rem;
-                        margin:0.5rem;
-                        position: relative;
+                        color: $magnolia;
                     }
-                }
-
-                ul{
-                    width: 90%;
-                    li{
-                        font-size: 1.2rem;
-                        margin-top: 1rem;
+    
+                    .logos{
+                        width: 90%;
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: space-evenly;
+    
+                        svg{
+                            font-size: 3rem;
+                            margin:0.5rem;
+                            position: relative;
+                        }
                     }
-                }
-
-                .serverImg{
-                    width: 100vw;
-                    height: 56.25vw;
-                    background-size: cover;
+    
+                    ul{
+                        width: 90%;
+                        li{
+                            font-size: 1.2rem;
+                            margin-top: 1rem;
+                            color: $magnolia;
+                        }
+                    }
                 }
 
                 .particlesTwo{
@@ -196,5 +203,82 @@
                     }
                 }
             }
+        }
+    }
+}
+
+@media (min-width: $mobile) {
+    .home{
+        .greeting{
+            width: 90%;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .text{
+                width: 45%;
+            }
+    
+            .particlesOne{
+                width: 45vw;
+                height: 45vw;
+    
+                #tsparticles{
+                    width: 45vw;
+                    height: 45vw;
+                }
+            }
+        }
+
+        .main{
+    
+            .skills{
+    
+                .webDev{
+                    width: 90%;
+                    flex-direction: row-reverse;
+                    justify-content: space-between;
+
+                    .text{
+                        width: 45%;
+
+                        h1{
+                            margin:2rem 0;
+                            font-size: 3rem;
+                        }
+                    }
+                    
+    
+                    .particlesThree{
+                        width: 45vw;
+                        height: 45vw;
+            
+                        #tsparticlesthree{
+                            width: 45vw;
+                            height: 45vw;
+                        }
+                    }
+                }
+
+                .cloud{
+                    width: 90%;
+                    flex-direction: row;
+                    justify-content: space-between;
+
+                    .text{
+                        width: 45%;
+                    }
+        
+                    .particlesTwo{
+                        width: 45vw;
+                        height: 45vw;
+            
+                        #tsparticlestwo{
+                            width: 45vw;
+                            height: 45vw;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
