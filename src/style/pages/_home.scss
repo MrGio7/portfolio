@@ -100,7 +100,7 @@
         h1{
             width: 90%;
             text-align: center;
-            font-size: 4rem;
+            font-size: 3rem;
         }
 
         .skills{
@@ -133,7 +133,8 @@
 
                 ul{
                     li{
-                        font-size: 1rem;
+                        font-size: 1.2rem;
+                        margin-top: 1rem;
                     }
                 }
             }
@@ -145,6 +146,11 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                margin-top: 2rem;
+
+                h1{
+                    font-size: 3rem;
+                }
 
                 .logos{
                     width: 90%;
@@ -163,7 +169,8 @@
                 ul{
                     width: 90%;
                     li{
-                        font-size: 1rem;
+                        font-size: 1.2rem;
+                        margin-top: 1rem;
                     }
                 }
 
@@ -188,7 +195,6 @@
                         }
                     }
                 }
-
             }
     }
 }

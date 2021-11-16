@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import { NavBar, Home, Experience } from "./components";
+import { NavBar, Home, Experience, Projects, Contact } from "./components";
 
 
 class App extends React.Component {
@@ -26,6 +26,8 @@ class App extends React.Component {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="experience" element={<Experience />} />
+          <Route path="projects" element={<Projects />} />
+          <Route path="contact" element={<Contact />} />
         </Routes>
       </div>
     );

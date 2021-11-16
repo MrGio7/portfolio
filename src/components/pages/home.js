@@ -172,10 +172,10 @@ class Home extends React.Component {
                 <Icon icon="logos:firebase" />
               </div>
               <ul>
-                <li>Experience working on multiple cloud platforms</li>
-                <li>Hosting and maintaining websites on virtual machine instances along with integration of databases</li>
-                <li>Deploying deep learning models on cloud to use on mobile devices</li>
-                <li>Setting up streaming jobs from DB to Server or vice-versa on GCP and AWS</li>
+                <li>&#128073;Experience working on multiple cloud platforms</li>
+                <li>&#128073;Hosting and maintaining websites on virtual machine instances along with integration of databases</li>
+                <li>&#128073;Deploying deep learning models on cloud to use on mobile devices</li>
+                <li>&#128073;Setting up streaming jobs from DB to Server or vice-versa on GCP and AWS</li>
               </ul>
               <div className="particlesTwo">
           <Particles
