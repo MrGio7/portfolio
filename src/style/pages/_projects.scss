@@ -87,7 +87,7 @@
                 a{
                     text-decoration: none;
                     background-color: $darkPurple;
-                    color: $magnolia;
+                    color: $white;
                     padding: 0.5rem;
                     margin-right: 0.5rem;
                     border-radius: 5px 5px 0 0;
@@ -106,7 +106,7 @@
         cursor: pointer;
         font-size: 2rem;
         text-decoration: none;
-        color: $magnolia;
+        color: $white;
 
         &:hover{
             background-color: $darkLiver;
@@ -114,7 +114,7 @@
     }
 }
 
-@media (min-width: $mobile) {
+@media (min-width: $pc) {
     .projects{
         .projectsCard{
             width: 90%;

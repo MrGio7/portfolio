@@ -18,7 +18,7 @@
         .text{
             width: 90%;
             padding: 1rem 0.5rem;
-            background-color: $magnolia;
+            background-color: $white;
             color: $darkLiver;
             font-size: 1rem;
             border-radius: 5px;
@@ -160,7 +160,7 @@
                 
                     h1{
                         font-size: 3rem;
-                        color: $magnolia;
+                        color: $white;
                     }
     
                     .logos{
@@ -182,7 +182,7 @@
                         li{
                             font-size: 1.2rem;
                             margin-top: 1rem;
-                            color: $magnolia;
+                            color: $white;
                         }
                     }
                 }
@@ -207,58 +207,65 @@
     }
 }
 
-@media (min-width: $mobile) {
+@media (min-width: $pc) {
     .home{
         .greeting{
             width: 90%;
             flex-direction: row;
             justify-content: space-between;
+            margin-top: 1.5rem;
 
             .text{
                 width: 45%;
-                height: 20rem;
+                height: 30vw;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
                 align-items: center;
                 padding: 2rem 2rem;
-                background-color: $magnolia;
                 color: $darkPurple;
-                font-size: 1rem;
-                border-radius: 5px;
+
+                h1{
+                    font-size: 2vw;
+                }
 
                 p {
                     font-weight: normal;
-                    font-size: 1.2rem;
+                    font-size: 1.2vw;
                     letter-spacing: .05rem;
                     margin:0;
+                    white-space: pre-wrap;
+                    align-self: flex-start;
                 }
 
                 .social{
                     padding: 0;
                     margin:0;
+
+                    a{
+                        text-decoration: none;
+                        color: black;
+                        svg{
+                            cursor: pointer;
+                            font-size: 3vw;
+                        }
+                    }
+
                 }
             }
     
             .particlesOne{
                 width: 45vw;
-                height: 45vw;
+                height: 30vw;
     
                 #tsparticles{
                     width: 45vw;
-                    height: 45vw;
+                    height: 30vw;
                 }
             }
         }
 
         .main{
-            margin-top: 4.5rem;
-            margin-bottom: 4.5rem;
-
-
-            h1{
-                margin-bottom: 2rem;
-            }
 
             .skills{
 
@@ -267,48 +274,49 @@
                     width: 90%;
                     flex-direction: row-reverse;
                     justify-content: space-between;
+                    margin-top: 4.5rem;
 
                     .text{
                         width: 45%;
-                        height: 26rem;
+                        height: 30vw;
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
-                        background-color: $magnolia;
+                        align-items: center;
+                        padding: 2rem 2rem;
+                        background-color: $white;
                         border-radius: 5px;
                         color: $darkPurple;
                         margin:0;
 
                         h1{
                             order: 1;
-                            margin:2rem 0 0 0;
-                            font-size: 3rem;
+                            margin:0;
+                            font-size: 2vw;
                             font-weight: bold;
                         }
 
                         .logos{
                             order: 3;
-                            display: flex;
-                            flex-direction: row;
-                            flex-wrap: wrap;
-                            justify-content: space-between;
-                            align-self: center;
-                            width: 100%;
-                            margin-bottom: 1rem;
                             
                             svg{
-                                font-size: 2rem;
+                                font-size: 3vw;
+                                width: 13%;
+                                margin: 1rem 0 0 0;
                             }
                         }
 
                         ul{
                             order: 2;
-                            font-size: 1.2rem;
-                            width: max-content;
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-evenly;
                             align-self: center;
 
                             li{
-                                margin-bottom: 1rem;
+                                margin:0;
+                                font-size: 1.2vw;
                             }
                         }
                     }
@@ -316,11 +324,11 @@
     
                     .particlesThree{
                         width: 45vw;
-                        height: 45vw;
+                        height: 30vw;
             
                         #tsparticlesthree{
                             width: 45vw;
-                            height: 45vw;
+                            height: 30vw;
                         }
                     }
                 }
@@ -329,14 +337,17 @@
                     width: 90%;
                     flex-direction: row;
                     justify-content: space-between;
+                    margin-top: 4.5rem;
 
                     .text{
                         width: 45%;
-                        height: 26rem;
+                        height: 30vw;
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
-                        background-color: $magnolia;
+                        align-items: center;
+                        padding: 2rem 2rem;
+                        background-color: $white;
                         border-radius: 5px;
                         color: $darkPurple;
                         margin:0;
@@ -344,26 +355,33 @@
 
                         h1{
                             order: 1;
-                            margin:2rem 0 1rem 0;
-                            font-size: 3rem;
+                            margin:0;
+                            font-size: 2vw;
                             font-weight: bold;
-                            align-self: center;
                             color: $darkPurple;
                         }
 
                         .logos{
-                            order:3;
-                            margin-top: 1rem;
+                            order: 3;
+                            
+                            svg{
+                                font-size: 3vw;
+                                width: 13%;
+                                margin: 1rem 0 0 0;
+                            }
                         }
 
                         ul{
                             order: 2;
-                            font-size: 1.2rem;
-                            width: 80%;
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-evenly;
                             align-self: center;
 
                             li{
-                                font-size: 1.2rem;
+                                margin:0;
+                                font-size: 1.2vw;
                                 color: $darkPurple;
                             }
                         }
@@ -371,11 +389,11 @@
         
                     .particlesTwo{
                         width: 45vw;
-                        height: 45vw;
+                        height: 30vw;
             
                         #tsparticlestwo{
                             width: 45vw;
-                            height: 45vw;
+                            height: 30vw;
                         }
                     }
                 }

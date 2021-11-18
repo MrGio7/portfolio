@@ -12,7 +12,7 @@ class Home extends React.Component {
     this.state = {
       loading: true,
     };
-  }
+  }    
 
   render() {
     return (
@@ -21,17 +21,32 @@ class Home extends React.Component {
           <div className="text">
             <h1>Giorgi Bakashvili</h1>
             <p>
-              A passionate individual who always thrive to work on end to end
-              products which develop sustainable and scalable social and
-              technical systems to create impact.
+              A passionate individual who always thrive to work on end to end products which develop sustainable and scalable social and technical systems to create impact.
             </p>
+            <p>&#128073;Understanding HTML, have design skills and analytical knowledge. </p>
+            <p>&#128073;Using JavaScript, constructing interactive web pages on both the client and server sides.</p>
+            <p>&#128073;Using Git to track, regulate, and revise code changes.</p>
+            <p>&#128073;Finding bugs, faults, or other irregularities in code and then fixing or changing them.</p>
+            <p>&#128073;Know how to deploy codes. Deploying code entails putting it in the cloud, using SaaS providers like Amazon Web Services, and so on.</p>
             <div className="social">
-              <Icon icon="zmdi:github-box" />
-              <Icon icon="logos:linkedin-icon" />
-              <Icon icon="logos:google-gmail" />
-              <Icon icon="logos:twitter" />
-              <Icon icon="logos:facebook" />
-              <Icon icon="logos:instagram-icon" />
+              <a href="https://github.com/MrGio7" target="_blank" rel="noopener noreferrer">
+                <Icon icon="zmdi:github-box" />
+              </a>
+              <a href="mailto:mailto:someone@yoursite.com" target="_blank" rel="noopener noreferrer">
+                <Icon icon="logos:linkedin-icon" />
+              </a>
+              <a href="mailto:mailto:someone@yoursite.com" target="_blank" rel="noopener noreferrer">
+                <Icon icon="logos:google-gmail" />
+              </a>
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                <Icon icon="logos:twitter" />
+              </a>
+              <a href="https://www.facebook.com/giorgi.bakashvili.7" target="_blank" rel="noopener noreferrer">
+                <Icon icon="logos:facebook" />
+              </a>
+              <a href="https://www.instagram.com/mr.gio7/" target="_blank" rel="noopener noreferrer">
+                <Icon icon="akar-icons:instagram-fill" color="#e8486d" />
+              </a>
             </div>
           </div>
           <div className="particlesOne">
@@ -139,7 +154,6 @@ class Home extends React.Component {
           </div>
         </div>
         <div className="main">
-          <h1>What I Do?</h1>
           <div className="skills">
             <div className="webDev">
               <div className="text">
@@ -161,8 +175,9 @@ class Home extends React.Component {
               </div>
               <ul>
                 <li>&#128073;Building resposive website front end using React-Redux</li>
+                <li>&#128073;Styling website front end components using SASS, CSS</li>
                 <li>&#128073;Creating application backend in Node, Express</li>
-                <li>&#128073;Developing mobile applications using Flutter, React Native</li>
+                <li>&#128073;Developing mobile applications using React Native</li>
               </ul>
               </div>
               <div className="particlesThree">

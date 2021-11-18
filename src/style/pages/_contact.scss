@@ -43,7 +43,7 @@
             cursor: pointer;
             font-size: 2rem;
             text-decoration: none;
-            color: $magnolia;
+            color: $white;
     
             &:hover{
                 background-color: $darkLiver;
@@ -52,7 +52,7 @@
     }
 }
 
-@media (min-width: $mobile) {
+@media (min-width: $pc) {
     .contact{
         flex-direction: row;
         justify-content: center;
