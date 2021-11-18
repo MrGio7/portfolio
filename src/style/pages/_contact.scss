@@ -6,11 +6,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 
     img{
         border-radius: 50%;
         width: 60%;
         margin-top: 2rem;
+        animation:x-50vw 1s;
     }
 
     .text{
@@ -19,6 +21,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        animation:x50vw 1s;
 
         h1{
             font-size: 3rem;

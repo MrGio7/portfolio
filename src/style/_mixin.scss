@@ -1,0 +1,13 @@
+@mixin keyframes-translate3d($name, $x, $y, $z) {
+    @keyframes #{$name} {
+        0% {
+            opacity: 0;    
+            transform: translate3d($x, $y, $z);
+        }
+
+        100% {
+            opacity: 1;
+            transform: none;
+        }
+    }
+}
