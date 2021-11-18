@@ -96,6 +96,7 @@
                     h1{
                         width: 100%;
                         font-size: 2rem;
+                        text-align: center;
                     }
     
                     .logos{
@@ -213,7 +214,6 @@
             width: 90%;
             flex-direction: row;
             justify-content: space-between;
-            margin-top: 1.5rem;
 
             .text{
                 width: 45%;
@@ -299,6 +299,7 @@
 
                         .logos{
                             order: 3;
+                            margin:0;
                             
                             svg{
                                 font-size: 3vw;
