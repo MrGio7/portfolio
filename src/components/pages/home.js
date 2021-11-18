@@ -51,7 +51,7 @@ class Home extends React.Component {
               backgroundMask: {
                 cover: {
                   color: {
-                    value: "#32144f",
+                    value: "#19042c",
                   },
                 },
                 enable: true,
@@ -112,7 +112,7 @@ class Home extends React.Component {
                   density: {
                     enable: true,
                   },
-                  value: 80,
+                  value: 130,
                 },
                 opacity: {
                   animation: {
@@ -126,7 +126,7 @@ class Home extends React.Component {
                   },
                   value: {
                     min: 1,
-                    max: 30,
+                    max: 40,
                   },
                   animation: {
                     speed: 40,
@@ -182,7 +182,7 @@ class Home extends React.Component {
               backgroundMask: {
                 cover: {
                   color: {
-                    value: "#32144f",
+                    value: "#19042c",
                   },
                 },
                 enable: true,
@@ -243,7 +243,7 @@ class Home extends React.Component {
                   density: {
                     enable: true,
                   },
-                  value: 80,
+                  value: 130,
                 },
                 opacity: {
                   animation: {
@@ -257,7 +257,7 @@ class Home extends React.Component {
                   },
                   value: {
                     min: 1,
-                    max: 30,
+                    max: 40,
                   },
                   animation: {
                     speed: 40,
@@ -302,7 +302,7 @@ class Home extends React.Component {
               backgroundMask: {
                 cover: {
                   color: {
-                    value: "#32144f",
+                    value: "#19042c",
                   },
                 },
                 enable: true,
@@ -363,7 +363,7 @@ class Home extends React.Component {
                   density: {
                     enable: true,
                   },
-                  value: 80,
+                  value: 130,
                 },
                 opacity: {
                   animation: {
@@ -377,7 +377,7 @@ class Home extends React.Component {
                   },
                   value: {
                     min: 1,
-                    max: 30,
+                    max: 40,
                   },
                   animation: {
                     speed: 40,
