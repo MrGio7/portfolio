@@ -25,6 +25,7 @@ class Projects extends React.Component {
             <div className="text">
               <h1>Projects</h1>
               <p>My projects makes use of vast variety of latest technology tools. My best experience is to create Data Science projects and deploy them to web applications using cloud infrastructure.</p>
+              <p>Working on web development projects helps bridge the gap between theory and real-world code.</p>
             </div>
         </div>
         <div className="projList">

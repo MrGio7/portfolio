@@ -24,14 +24,21 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            background-color: $white;
+            color:$darkPurple;
+            margin: 2rem 0 0 0;
+            padding: 2rem 1rem;
+            border-radius: 5px;
 
             h1{
                 font-size:3rem;
+                font-weight: bold;
             }
     
             p{
-                font-size: 1rem;
+                font-size: 1.2rem;
                 width: 100%;
+                margin:2rem 0 0 0;
             }
         }
     }
@@ -46,7 +53,8 @@
 
         .card{
             width: 90%;
-            background-color: $darkLiver;
+            background-color: $purple;
+            color: $white;
             border-radius: 5px;
             margin-top: 1rem;
 
@@ -102,7 +110,7 @@
         margin:2rem 0;
         padding: 1rem 2rem;
         border-radius: 5px;
-        border:2px solid $darkLiver;
+        border:2px solid $purple;
         cursor: pointer;
         font-size: 2rem;
         text-decoration: none;
@@ -122,12 +130,14 @@
             justify-content: space-between;
     
             img{
-                width: 45%;
+                width: 49%;
                 border-radius: 5px;
             }
     
             .text{
-                width: 45%;
+                width: 49%;
+                background: none;
+                color:$white;
             }
         }
     
