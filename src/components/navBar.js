@@ -40,7 +40,7 @@ class NavBar extends React.Component {
             <Link to="portfolio" onClick={() => this.setState({ navOpened: false })}>
               Home
             </Link>
-            <Link to="portfolio/experience" onClick={() => this.setState({ navOpened: false })}>Experience</Link>
+            {/* <Link to="portfolio/experience" onClick={() => this.setState({ navOpened: false })}>Experience</Link> */}
             <Link to="portfolio/projects" onClick={() => this.setState({ navOpened: false })}>Projects</Link>
             <Link to="portfolio/contact" onClick={() => this.setState({ navOpened: false })}>Contact Me</Link>
           </div>

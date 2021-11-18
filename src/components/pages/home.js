@@ -32,10 +32,10 @@ class Home extends React.Component {
               <a href="https://github.com/MrGio7" target="_blank" rel="noopener noreferrer">
                 <Icon icon="zmdi:github-box" />
               </a>
-              <a href="mailto:mailto:someone@yoursite.com" target="_blank" rel="noopener noreferrer">
+              <a href="mailto:lashagiorgi1233@gmail.com" target="_blank" rel="noopener noreferrer">
                 <Icon icon="logos:linkedin-icon" />
               </a>
-              <a href="mailto:mailto:someone@yoursite.com" target="_blank" rel="noopener noreferrer">
+              <a href="mailto:lashagiorgi1233@gmail.com" target="_blank" rel="noopener noreferrer">
                 <Icon icon="logos:google-gmail" />
               </a>
               <a href="http://" target="_blank" rel="noopener noreferrer">

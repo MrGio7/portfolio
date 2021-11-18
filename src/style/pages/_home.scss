@@ -17,11 +17,10 @@
 
         .text{
             width: 90%;
-            padding: 1rem 0.5rem;
-            background-color: $white;
-            color: $darkLiver;
+            color: $white;
             font-size: 1rem;
             border-radius: 5px;
+            margin-top: 2rem;
 
             h1{
                 font-size: 2rem;
@@ -76,12 +75,6 @@
         justify-content: center;
         align-items: center;
 
-        h1{
-            width: 90%;
-            text-align: center;
-            font-size: 3rem;
-        }
-
         .skills{
             width: 100%;
             display: flex;
@@ -95,6 +88,7 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                margin-top: 2rem;
 
                 .text{
                     width: 90%;
@@ -110,6 +104,7 @@
                         flex-direction: row;
                         flex-wrap: wrap;
                         justify-content: space-evenly;
+                        margin-top: 2rem;
     
                         svg{
                             font-size: 4rem;
@@ -153,32 +148,37 @@
                 
                 .text{
                     width: 90%;
-                    padding: 1rem 0.5rem;
-                    color: $darkLiver;
-                    font-size: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 2rem;
                     border-radius: 5px;
                 
                     h1{
                         font-size: 3rem;
                         color: $white;
+                        align-self: center;
+                        text-align: center;
                     }
     
                     .logos{
-                        width: 90%;
+                        width: 100%;
                         display: flex;
                         flex-direction: row;
                         flex-wrap: wrap;
                         justify-content: space-evenly;
+                        margin-top: 2rem;
     
                         svg{
                             font-size: 3rem;
-                            margin:0.5rem;
                             position: relative;
                         }
                     }
     
                     ul{
-                        width: 90%;
+                        width: 100%;
+                        margin-top: 2rem;
                         li{
                             font-size: 1.2rem;
                             margin-top: 1rem;
@@ -223,6 +223,7 @@
                 justify-content: space-between;
                 align-items: center;
                 padding: 2rem 2rem;
+                background-color: $white;
                 color: $darkPurple;
 
                 h1{

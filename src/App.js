@@ -25,7 +25,7 @@ class App extends React.Component {
         <NavBar />
         <Routes>
           <Route path="portfolio" element={<Home />} />
-          <Route path="portfolio/experience" element={<Experience />} />
+          {/* <Route path="portfolio/experience" element={<Experience />} /> */}
           <Route path="portfolio/projects" element={<Projects />} />
           <Route path="portfolio/contact" element={<Contact />} />
         </Routes>

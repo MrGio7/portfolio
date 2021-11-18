@@ -14,14 +14,21 @@
     }
 
     .text{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
         h1{
             font-size: 3rem;
-            margin:1rem 0;
+            margin-top: 2rem;
         }
     
         p{
             width: 90%;
-            font-size: 1rem;
+            font-size: 1.2rem;
+            margin-top: 2rem;
         }
     
         .icons{
@@ -29,24 +36,25 @@
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
-            margin:1rem 0;
+            margin-top: 2rem;
     
             svg{
                 font-size: 2rem;
+                color: $white;
             }
         }
         .resume{
             margin:2rem 0;
             padding: 1rem 2rem;
             border-radius: 5px;
-            border:2px solid $darkLiver;
+            border:2px solid $purple;
             cursor: pointer;
             font-size: 2rem;
             text-decoration: none;
             color: $white;
     
             &:hover{
-                background-color: $darkLiver;
+                background-color: $lightPurple;
             }
         }
     }
