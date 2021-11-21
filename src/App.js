@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import { NavBar, Home, Projects, Contact } from "./components";
+import { Loading, NavBar, Home, Projects, Contact } from "./components";
 
 
 class App extends React.Component {
@@ -12,14 +12,14 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    this.setState({
+    setTimeout(() => this.setState({
       loading: false
-    })
+    }), 1500)
   }
 
   render() {
     return this.state.loading ? (
-      <div className="loading">Loading</div>
+      <Loading/>
     ) : (
       <div className="App">
         <NavBar />
