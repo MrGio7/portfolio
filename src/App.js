@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import { NavBar, Home, Experience, Projects, Contact } from "./components";
+import { NavBar, Home, Projects, Contact } from "./components";
 
 
 class App extends React.Component {

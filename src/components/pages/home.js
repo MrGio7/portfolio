@@ -14,9 +14,80 @@ class Home extends React.Component {
     };
   }    
 
+  particleOptions = (img) => { return {
+    background: {
+      image: `url(${img})`,
+      repeat: "no-repeat",
+      size: "cover",
+    },
+    backgroundMask: {
+      cover: {
+        color: {
+          value: "#19042c",
+        },
+      },
+      enable: true,
+    },
+    interactivity: {
+      events: {
+        onHover: {
+          enable: true,
+          mode: "bubble",
+          parallax: {
+            force: 60,
+          },
+        },
+      },
+      modes: {
+        bubble: {
+          size: 100,
+        },
+      },
+    },
+    particles: {
+      links: {
+        distance: 150,
+        enable: true,
+      },
+      move: {
+        attract: {
+          rotate: {
+            x: 600,
+            y: 1200,
+          },
+        },
+        enable: true,
+      },
+      number: {
+        density: {
+          enable: true,
+        },
+        value: 130,
+      },
+      size: {
+        random: {
+          enable: true,
+        },
+        value: {
+          min: 1,
+          max: 40,
+        },
+        animation: {
+          speed: 40,
+          minimumValue: 0.1,
+        },
+      },
+    },
+  }}
+
+  componentDidMount() {
+    this.setState({loading: false})
+  }
+
   render() {
     return (
-      <div className="home">
+      this.state.loading ? <div className="loading">Loading</div> :
+       <div className="home">
         <div className="greeting">
           <div className="text">
             <h1>Giorgi Bakashvili</h1>
@@ -52,104 +123,7 @@ class Home extends React.Component {
           <div className="particlesOne">
           <Particles
             id="tsparticles"
-            options={{
-              position: "relative",
-              background: {
-                color: {
-                  value: "#ffffff",
-                },
-                image: `url(${greetingImg})`,
-                position: "relative",
-                repeat: "no-repeat",
-                size: "cover",
-              },
-              backgroundMask: {
-                cover: {
-                  color: {
-                    value: "#19042c",
-                  },
-                },
-                enable: true,
-              },
-              interactivity: {
-                events: {
-                  onClick: {
-                    enable: false,
-                    mode: "push",
-                  },
-                  onHover: {
-                    enable: true,
-                    mode: "bubble",
-                    parallax: {
-                      force: 60,
-                    },
-                  },
-                },
-                modes: {
-                  bubble: {
-                    distance: 400,
-                    duration: 2,
-                    opacity: 1,
-                    size: 100,
-                  },
-                  grab: {
-                    distance: 400,
-                  },
-                },
-              },
-              particles: {
-                color: {
-                  value: "#ffffff",
-                },
-                links: {
-                  color: {
-                    value: "#ffffff",
-                  },
-                  distance: 150,
-                  enable: true,
-                },
-                move: {
-                  attract: {
-                    rotate: {
-                      x: 600,
-                      y: 1200,
-                    },
-                  },
-                  enable: true,
-                  outModes: {
-                    bottom: "out",
-                    left: "out",
-                    right: "out",
-                    top: "out",
-                  },
-                },
-                number: {
-                  density: {
-                    enable: true,
-                  },
-                  value: 130,
-                },
-                opacity: {
-                  animation: {
-                    speed: 1,
-                    minimumValue: 0.1,
-                  },
-                },
-                size: {
-                  random: {
-                    enable: true,
-                  },
-                  value: {
-                    min: 1,
-                    max: 40,
-                  },
-                  animation: {
-                    speed: 40,
-                    minimumValue: 0.1,
-                  },
-                },
-              },
-            }}
+            options={this.particleOptions(greetingImg)}
           />
           </div>
         </div>
@@ -183,104 +157,7 @@ class Home extends React.Component {
               <div className="particlesThree">
           <Particles
             id="tsparticlesthree"
-            options={{
-              position: "relative",
-              background: {
-                color: {
-                  value: "#ffffff",
-                },
-                image: `url(${codeImg})`,
-                position: "relative",
-                repeat: "no-repeat",
-                size: "cover",
-              },
-              backgroundMask: {
-                cover: {
-                  color: {
-                    value: "#19042c",
-                  },
-                },
-                enable: true,
-              },
-              interactivity: {
-                events: {
-                  onClick: {
-                    enable: false,
-                    mode: "push",
-                  },
-                  onHover: {
-                    enable: true,
-                    mode: "bubble",
-                    parallax: {
-                      force: 60,
-                    },
-                  },
-                },
-                modes: {
-                  bubble: {
-                    distance: 400,
-                    duration: 2,
-                    opacity: 1,
-                    size: 100,
-                  },
-                  grab: {
-                    distance: 400,
-                  },
-                },
-              },
-              particles: {
-                color: {
-                  value: "#ffffff",
-                },
-                links: {
-                  color: {
-                    value: "#ffffff",
-                  },
-                  distance: 150,
-                  enable: true,
-                },
-                move: {
-                  attract: {
-                    rotate: {
-                      x: 600,
-                      y: 1200,
-                    },
-                  },
-                  enable: true,
-                  outModes: {
-                    bottom: "out",
-                    left: "out",
-                    right: "out",
-                    top: "out",
-                  },
-                },
-                number: {
-                  density: {
-                    enable: true,
-                  },
-                  value: 130,
-                },
-                opacity: {
-                  animation: {
-                    speed: 1,
-                    minimumValue: 0.1,
-                  },
-                },
-                size: {
-                  random: {
-                    enable: true,
-                  },
-                  value: {
-                    min: 1,
-                    max: 40,
-                  },
-                  animation: {
-                    speed: 40,
-                    minimumValue: 0.1,
-                  },
-                },
-              },
-            }}
+            options={this.particleOptions(codeImg)}
           />
               </div>
             </div>
@@ -303,104 +180,7 @@ class Home extends React.Component {
               <div className="particlesTwo">
           <Particles
             id="tsparticlestwo"
-            options={{
-              position: "relative",
-              background: {
-                color: {
-                  value: "#ffffff",
-                },
-                image: `url(${serverImg})`,
-                position: "relative",
-                repeat: "no-repeat",
-                size: "cover",
-              },
-              backgroundMask: {
-                cover: {
-                  color: {
-                    value: "#19042c",
-                  },
-                },
-                enable: true,
-              },
-              interactivity: {
-                events: {
-                  onClick: {
-                    enable: false,
-                    mode: "push",
-                  },
-                  onHover: {
-                    enable: true,
-                    mode: "bubble",
-                    parallax: {
-                      force: 60,
-                    },
-                  },
-                },
-                modes: {
-                  bubble: {
-                    distance: 400,
-                    duration: 2,
-                    opacity: 1,
-                    size: 100,
-                  },
-                  grab: {
-                    distance: 400,
-                  },
-                },
-              },
-              particles: {
-                color: {
-                  value: "#ffffff",
-                },
-                links: {
-                  color: {
-                    value: "#ffffff",
-                  },
-                  distance: 150,
-                  enable: true,
-                },
-                move: {
-                  attract: {
-                    rotate: {
-                      x: 600,
-                      y: 1200,
-                    },
-                  },
-                  enable: true,
-                  outModes: {
-                    bottom: "out",
-                    left: "out",
-                    right: "out",
-                    top: "out",
-                  },
-                },
-                number: {
-                  density: {
-                    enable: true,
-                  },
-                  value: 130,
-                },
-                opacity: {
-                  animation: {
-                    speed: 1,
-                    minimumValue: 0.1,
-                  },
-                },
-                size: {
-                  random: {
-                    enable: true,
-                  },
-                  value: {
-                    min: 1,
-                    max: 40,
-                  },
-                  animation: {
-                    speed: 40,
-                    minimumValue: 0.1,
-                  },
-                },
-              },
-            }}
+            options={this.particleOptions(serverImg)}
           />
               </div>
             </div>
