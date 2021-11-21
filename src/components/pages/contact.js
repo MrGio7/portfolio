@@ -18,7 +18,7 @@ class Contact extends React.Component {
 
   render() {
     return this.state.loading ? (
-      <div className="loading">Loading</div>
+      this.props.loading
     ) : (
       <div className="contact">
         <img

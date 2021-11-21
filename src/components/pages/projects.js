@@ -17,7 +17,7 @@ class Projects extends React.Component {
 
   render() {
     return this.state.loading ? (
-      <div className="loading">Loading</div>
+      this.props.loading
     ) : (
       <div className="projects">
         <div className="projectsCard">

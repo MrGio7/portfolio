@@ -22,12 +22,12 @@ class App extends React.Component {
       <Loading/>
     ) : (
       <div className="App">
-        <NavBar />
+        <NavBar loading={<Loading/>}/>
         <Routes>
-          <Route path="portfolio" element={<Home />} />
+          <Route path="portfolio" element={<Home loading={<Loading/>} />} />
           {/* <Route path="portfolio/experience" element={<Experience />} /> */}
-          <Route path="portfolio/projects" element={<Projects />} />
-          <Route path="portfolio/contact" element={<Contact />} />
+          <Route path="portfolio/projects" element={<Projects loading={<Loading/>} />} />
+          <Route path="portfolio/contact" element={<Contact loading={<Loading/>} />} />
         </Routes>
       </div>
     );
