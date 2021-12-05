@@ -41,7 +41,7 @@ class Contact extends React.Component {
               <Icon icon="zmdi:github-box" />
             </a>
             <a
-              href="www.linkedin.com/in/giorgi-bakashvili-87a174226"
+              href="https://www.linkedin.com/in/giorgi-bakashvili-87a174226/"
               target="_blank"
               rel="noopener noreferrer"
             >
