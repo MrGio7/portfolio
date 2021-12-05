@@ -128,7 +128,7 @@ class Home extends React.Component {
                 <Icon icon="zmdi:github-box" />
               </a>
               <a
-                href="mailto:lashagiorgi1233@gmail.com"
+                href="www.linkedin.com/in/giorgi-bakashvili-87a174226"
                 target="_blank"
                 rel="noopener noreferrer"
               >

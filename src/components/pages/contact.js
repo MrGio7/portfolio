@@ -41,7 +41,7 @@ class Contact extends React.Component {
               <Icon icon="zmdi:github-box" />
             </a>
             <a
-              href="mailto:lashagiorgi1233@gmail.com"
+              href="www.linkedin.com/in/giorgi-bakashvili-87a174226"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -72,7 +72,14 @@ class Contact extends React.Component {
               <Icon icon="akar-icons:instagram-fill" color="#e8486d" />
             </a>
           </div>
-          <div className="resume">See My Resume</div>
+          <a
+            className="resume"
+            href="https://drive.google.com/file/d/1v9ZASH0fxsYX1YqcYxIl1h8FZ52lMoJx/view?usp=sharing"
+            target="_blank"
+            rel="noreferrer"
+          >
+            See My Resume
+          </a>
         </div>
       </div>
     );
