@@ -32,7 +32,7 @@ class Projects extends React.Component {
             <div className="card">
                 <h1>P.M. WebSite</h1>
                 <h2>Complete Website</h2>
-                <h3>Created on </h3>
+                <h3>Created using</h3>
                 <div className="icons">
                     <Icon icon="logos:react" />
                     <Icon icon="logos:sass" />
@@ -46,25 +46,9 @@ class Projects extends React.Component {
                 </div>
             </div>
             <div className="card">
-                <h1>Website Template</h1>
-                <h2>Website template with custom login support</h2>
-                <h3>Created on </h3>
-                <div className="icons">
-                    <Icon icon="logos:react" />
-                    <Icon icon="logos:sass" />
-                    <Icon icon="logos:nodejs-icon" />
-                    <Icon icon="logos:sqlite" />
-                    <Icon icon="logos:npm-icon" />
-                </div>
-                <div className="links">
-                  <a href="https://mrgio7.github.io/webpage/" target="_blank"  rel="noreferrer">Site</a>
-                  <a href="https://github.com/MrGio7/webpage" target="_blank"  rel="noreferrer">Project</a>
-                </div>
-            </div>
-            <div className="card">
                 <h1>Trivia Online Game</h1>
                 <h2>This is fully functional trivia game with custom login support</h2>
-                <h3>Created on </h3>
+                <h3>Created using</h3>
                 <div className="icons">
                     <Icon icon="logos:react" />
                     <Icon icon="logos:sass" />
@@ -75,6 +59,20 @@ class Projects extends React.Component {
                 <div className="links">
                   <a href="https://mrgio7.github.io/trivia/" target="_blank"  rel="noreferrer">Site</a>
                   <a href="https://github.com/MrGio7/trivia" target="_blank"  rel="noreferrer">Project</a>
+                </div>
+            </div>
+            <div className="card">
+                <h1>SpaceX Cargo Planner</h1>
+                <h2>SpaceX Cargo Planner to automate the needed cargo space calculations.</h2>
+                <h3>Created using</h3>
+                <div className="icons">
+                    <Icon icon="logos:react" />
+                    <Icon icon="logos:sass" />
+                    <Icon icon="logos:npm-icon" />
+                </div>
+                <div className="links">
+                  <a href="https://mrgio7.github.io/spacex-cargo-planner/" target="_blank"  rel="noreferrer">Site</a>
+                  <a href="https://github.com/MrGio7/spacex-cargo-planner" target="_blank"  rel="noreferrer">Project</a>
                 </div>
             </div>
         </div>
