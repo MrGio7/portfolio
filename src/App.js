@@ -12,9 +12,9 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    setTimeout(() => this.setState({
+    this.setState({
       loading: false
-    }), 1500)
+    })
   }
 
   render() {
@@ -25,7 +25,6 @@ class App extends React.Component {
         <NavBar loading={<Loading/>}/>
         <Routes>
           <Route path="portfolio" element={<Home loading={<Loading/>} />} />
-          {/* <Route path="portfolio/experience" element={<Experience />} /> */}
           <Route path="portfolio/projects" element={<Projects loading={<Loading/>} />} />
           <Route path="portfolio/contact" element={<Contact loading={<Loading/>} />} />
         </Routes>
