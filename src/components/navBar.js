@@ -57,7 +57,7 @@ function NavBar() {
         </div>
         <div
           className={navOpened ? "burger opened" : "burger"}
-          onClick={(ev) => setNavOpened(!navOpened)}
+          onClick={() => setNavOpened(!navOpened)}
         >
           <div className="bar1" />
           <div className="bar2" />
@@ -66,14 +66,14 @@ function NavBar() {
       </div>
       <div className="navigation">
         <div className="list">
-          <Link to="portfolio" onClick={() => setNavOpened(false)}>
+          <Link to="/" onClick={() => setNavOpened(false)}>
             Home
           </Link>
           {/* <Link to="portfolio/experience" onClick={() => setNavOpened({ navOpened: false })}>Experience</Link> */}
-          <Link to="portfolio/projects" onClick={() => setNavOpened(false)}>
+          <Link to="projects" onClick={() => setNavOpened(false)}>
             Projects
           </Link>
-          <Link to="portfolio/contact" onClick={() => setNavOpened(false)}>
+          <Link to="contact" onClick={() => setNavOpened(false)}>
             Contact Me
           </Link>
         </div>
