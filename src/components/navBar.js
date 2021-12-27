@@ -1,34 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-class NavBar extends React.Component {
-  constructor(props) {
-    super(props);
+function NavBar() {
+  const [navOpened, setNavOpened] = useState(false);
 
-    this.state = {
-      loading: true,
-      navOpened: false,
-    };
-  }
-
-  componentDidMount() {
-    this.setState({
-      loading: false,
-    });
-  }
-
-  render() {
-    return this.state.loading ? (
-      this.props.loading
-    ) : (
-      <div className={this.state.navOpened ? "navBar opened" : "navBar"}>
-        <div className="mbHeader">
-          <div className="logo">
-          <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="0 0 91 146">
-  <path id="Selection"
-        fill="currentColor" stroke="black" stroke-width="1"
-        d="M 0.57,25.77
+  return (
+    <div className={navOpened ? "navBar opened" : "navBar"}>
+      <div className="mbHeader">
+        <div className="logo">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 91 146">
+            <path
+              id="Selection"
+              fill="currentColor"
+              stroke="black"
+              strokeWidth="1"
+              d="M 0.57,25.77
            C 2.42,15.95 6.53,8.05 15.86,3.27
              20.92,0.69 24.75,0.52 30.26,0.58
              44.48,0.75 55.65,11.57 56.35,25.77
@@ -65,46 +51,35 @@ class NavBar extends React.Component {
            C 56.19,98.66 51.69,100.03 47.83,104.31
              36.79,116.51 44.97,136.40 61.74,136.40
              81.13,136.40 87.41,113.46 74.30,102.59
-             70.42,99.38 66.61,98.54 61.74,98.25 Z" />
-</svg>
-          </div>
-          <div
-            className={this.state.navOpened ? "burger opened" : "burger"}
-            onClick={(ev) =>
-              this.setState({ navOpened: !this.state.navOpened })
-            }
-          >
-            <div className="bar1" />
-            <div className="bar2" />
-            <div className="bar3" />
-          </div>
+             70.42,99.38 66.61,98.54 61.74,98.25 Z"
+            />
+          </svg>
         </div>
-        <div className="navigation">
-          <div className="list">
-            <Link
-              to="portfolio"
-              onClick={() => this.setState({ navOpened: false })}
-            >
-              Home
-            </Link>
-            {/* <Link to="portfolio/experience" onClick={() => this.setState({ navOpened: false })}>Experience</Link> */}
-            <Link
-              to="portfolio/projects"
-              onClick={() => this.setState({ navOpened: false })}
-            >
-              Projects
-            </Link>
-            <Link
-              to="portfolio/contact"
-              onClick={() => this.setState({ navOpened: false })}
-            >
-              Contact Me
-            </Link>
-          </div>
+        <div
+          className={navOpened ? "burger opened" : "burger"}
+          onClick={(ev) => setNavOpened(!navOpened)}
+        >
+          <div className="bar1" />
+          <div className="bar2" />
+          <div className="bar3" />
         </div>
       </div>
-    );
-  }
+      <div className="navigation">
+        <div className="list">
+          <Link to="portfolio" onClick={() => setNavOpened(false)}>
+            Home
+          </Link>
+          {/* <Link to="portfolio/experience" onClick={() => setNavOpened({ navOpened: false })}>Experience</Link> */}
+          <Link to="portfolio/projects" onClick={() => setNavOpened(false)}>
+            Projects
+          </Link>
+          <Link to="portfolio/contact" onClick={() => setNavOpened(false)}>
+            Contact Me
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default NavBar;

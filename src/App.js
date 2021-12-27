@@ -1,36 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import { Loading, NavBar, Home, Projects, Contact } from "./components";
 
+function App() {
+  const [loading, setLoading] = useState(true);
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      loading: true,
-    };
-  }
+  useEffect(() => {
+    setLoading(false);
+  }, []);
 
-  componentDidMount() {
-    this.setState({
-      loading: false
-    })
-  }
-
-  render() {
-    return this.state.loading ? (
-      <Loading/>
-    ) : (
-      <div className="App">
-        <NavBar loading={<Loading/>}/>
-        <Routes>
-          <Route path="portfolio" element={<Home loading={<Loading/>} />} />
-          <Route path="portfolio/projects" element={<Projects loading={<Loading/>} />} />
-          <Route path="portfolio/contact" element={<Contact loading={<Loading/>} />} />
-        </Routes>
-      </div>
-    );
-  }
+  return loading ? (
+    <Loading />
+  ) : (
+    <div className="App">
+      <NavBar />
+      <Routes>
+        <Route path="portfolio" element={<Home />} />
+        <Route path="portfolio/projects" element={<Projects />} />
+        <Route path="portfolio/contact" element={<Contact />} />
+      </Routes>
+    </div>
+  );
 }
 
 export default App;
