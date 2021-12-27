@@ -2,10 +2,9 @@ import React from "react";
 import greetingImg from "../../assets/img/greeting.jpg";
 import codeImg from "../../assets/img/code.jpg";
 import serverImg from "../../assets/img/server.jpg";
-import Particles from "react-tsparticles";
 import { Icon } from "@iconify/react";
 
-function Home() {
+function Home({ Particles }) {
   const particleOptions = (img) => {
     return {
       background: {
