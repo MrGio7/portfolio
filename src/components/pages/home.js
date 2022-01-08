@@ -1,7 +1,7 @@
 import React from "react";
-import greetingImg from "../../assets/img/greeting.jpg";
-import codeImg from "../../assets/img/code.jpg";
-import serverImg from "../../assets/img/server.jpg";
+import greetingImg from "../../assets/img/greeting.webp";
+import codeImg from "../../assets/img/code.webp";
+import serverImg from "../../assets/img/server.webp";
 import { Icon } from "@iconify/react";
 
 function Home({ Particles }) {

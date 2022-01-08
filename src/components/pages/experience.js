@@ -1,5 +1,5 @@
 import React from "react";
-import experienceImg from "../../assets/img/experience.jpg";
+import experienceImg from "../../assets/img/experience.webp";
 
 function Experience() {
   return (

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
-import Particles from "react-tsparticles";
+import { Particles } from "react-tsparticles";
 import { Loading, NavBar, Home, Projects, Contact } from "./components";
 
 function App() {

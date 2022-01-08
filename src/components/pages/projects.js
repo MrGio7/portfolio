@@ -1,6 +1,6 @@
 import React from "react";
 import { Icon } from "@iconify/react";
-import projectsImg from "../../assets/img/projects.jpg";
+import projectsImg from "../../assets/img/projects.webp";
 
 function Projects() {
   return (
