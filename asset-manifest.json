@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.fc204ec4.chunk.css",
-    "main.js": "/portfolio/static/js/main.17cd4811.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.17cd4811.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.2721fd91.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.2721fd91.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.37da8305.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.37da8305.js.map",
-    "static/js/2.3213ea44.chunk.js": "/portfolio/static/js/2.3213ea44.chunk.js",
-    "static/js/2.3213ea44.chunk.js.map": "/portfolio/static/js/2.3213ea44.chunk.js.map",
+    "static/js/2.ff45991d.chunk.js": "/portfolio/static/js/2.ff45991d.chunk.js",
+    "static/js/2.ff45991d.chunk.js.map": "/portfolio/static/js/2.ff45991d.chunk.js.map",
     "index.html": "/portfolio/index.html",
     "static/css/main.fc204ec4.chunk.css.map": "/portfolio/static/css/main.fc204ec4.chunk.css.map",
-    "static/js/2.3213ea44.chunk.js.LICENSE.txt": "/portfolio/static/js/2.3213ea44.chunk.js.LICENSE.txt",
-    "static/media/code.afe54a88.jpg": "/portfolio/static/media/code.afe54a88.jpg",
-    "static/media/experience.1f0c3fab.jpg": "/portfolio/static/media/experience.1f0c3fab.jpg",
-    "static/media/greeting.9bcf250b.jpg": "/portfolio/static/media/greeting.9bcf250b.jpg",
-    "static/media/projects.d308303a.jpg": "/portfolio/static/media/projects.d308303a.jpg",
-    "static/media/server.3b22eeed.jpg": "/portfolio/static/media/server.3b22eeed.jpg"
+    "static/js/2.ff45991d.chunk.js.LICENSE.txt": "/portfolio/static/js/2.ff45991d.chunk.js.LICENSE.txt",
+    "static/media/code.2b5a8922.webp": "/portfolio/static/media/code.2b5a8922.webp",
+    "static/media/experience.748e831a.webp": "/portfolio/static/media/experience.748e831a.webp",
+    "static/media/greeting.8f80bc79.webp": "/portfolio/static/media/greeting.8f80bc79.webp",
+    "static/media/projects.9a8b1c55.webp": "/portfolio/static/media/projects.9a8b1c55.webp",
+    "static/media/server.22003da9.webp": "/portfolio/static/media/server.22003da9.webp"
   },
   "entrypoints": [
     "static/js/runtime-main.37da8305.js",
-    "static/js/2.3213ea44.chunk.js",
+    "static/js/2.ff45991d.chunk.js",
     "static/css/main.fc204ec4.chunk.css",
-    "static/js/main.17cd4811.chunk.js"
+    "static/js/main.2721fd91.chunk.js"
   ]
 }
