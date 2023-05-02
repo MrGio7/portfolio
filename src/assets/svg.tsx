@@ -86,7 +86,7 @@ export const ContactSVG: FC<SVGAttributes<SVGSVGElement>> = (props) => (
   </svg>
 );
 
-export const InfoSVG = (props: SVGAttributes<SVGSVGElement>) => (
+export const InfoSVG: FC<SVGAttributes<SVGSVGElement>> = (props: SVGAttributes<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" {...props}>
     <path
       fill="currentColor"
