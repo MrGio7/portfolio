@@ -9,12 +9,16 @@ const roboto = Roboto({ weight: "400", subsets: ["latin"] });
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
-      <header className={roboto.className}>
+      <style jsx global>{`
+        html {
+          font-family: ${roboto.style.fontFamily};
+        }
+      `}</style>
+
+      <header>
         <NavBar />
       </header>
-      <main className={roboto.className}>
-        <Component {...pageProps} />
-      </main>
+      <Component {...pageProps} />
     </>
   );
 }
