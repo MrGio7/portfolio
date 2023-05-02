@@ -1,28 +1,42 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import ProfilePicture from "@/assets/images/profile.webp";
 import MeetingStockImage from "@/assets/images/meeting-stock-image.webp";
+import TegetaApprovedImage from "@/assets/images/tegetaapproved.webp";
 import Link from "next/link";
 import { ProjectHistorySVG } from "@/assets/svg";
+import ProjectCard from "@/elements/cards/project";
+
+const skills = [
+  {
+    name: "Javascript",
+    color: "#F7DF1E",
+  },
+  {
+    name: "Typescript",
+    color: "#3178C6",
+  },
+  {
+    name: "Nodejs",
+    color: "#339933",
+  },
+  {
+    name: "React",
+    color: "#61DAFB",
+  },
+];
+
+const projects: { name: string; image: StaticImageData }[] = [
+  {
+    name: "Vidvely",
+    image: MeetingStockImage,
+  },
+  {
+    name: "Tegeta Approved",
+    image: TegetaApprovedImage,
+  },
+];
 
 export default function Home() {
-  const skills = [
-    {
-      name: "Javascript",
-      color: "#F7DF1E",
-    },
-    {
-      name: "Typescript",
-      color: "#3178C6",
-    },
-    {
-      name: "Nodejs",
-      color: "#339933",
-    },
-    {
-      name: "React",
-      color: "#61DAFB",
-    },
-  ];
   return (
     <main className="mt-10 flex flex-col overflow-visible px-5 lg:px-24">
       <section className="flex flex-col-reverse gap-y-14">
@@ -50,22 +64,20 @@ export default function Home() {
         </section>
       </section>
 
-      <section>
+      <section className="mt-8">
         <header className="flex items-center justify-between">
           <div className="flex flex-col">
-            <h1 className="text-2xl font-bold">Recent Project</h1>
+            <h1 className="text-2xl font-bold">Latest Projects</h1>
             <Link href="/projects" className="text-xs underline">
               All projects
             </Link>
           </div>
           <ProjectHistorySVG className="rounded-md bg-slate-900 p-1 text-4xl text-white" />
         </header>
-        <main className="my-8 px-20">
-          <section className="relative flex flex-col">
-            <Image src={MeetingStockImage} alt="meeting stock image" className="aspect-square self-center rounded-lg object-cover" />
-            <h1 className="text-md mt-5 font-bold">Vidvely</h1>
-            <span className="absolute -right-5 bottom-5 rounded-md bg-slate-900 p-2 text-2xl text-white">01</span>
-          </section>
+        <main className="my-8 flex flex-col gap-y-10 px-20">
+          {projects.map(({ image, name }, index) => (
+            <ProjectCard key={index} name={name} image={image} index={`0${index + 1}`} />
+          ))}
         </main>
       </section>
     </main>
