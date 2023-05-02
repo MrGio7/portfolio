@@ -1,4 +1,4 @@
-import { ContactSVG, HomeSVG, LinkedinSVG, LogoSVG, ProjectHistorySVG, WorkHistorySVG } from "@/assets/svg";
+import { ContactSVG, HomeSVG, InfoSVG, LinkedinSVG, LogoSVG, ProjectHistorySVG, WorkHistorySVG } from "@/assets/svg";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
@@ -9,6 +9,7 @@ interface NavBarProps {}
 
 const navigation: FlyOutMenuProps["solutions"] = [
   { name: "Home", href: "/", icon: HomeSVG, description: "Go to home page" },
+  { name: "About Me", href: "/about", icon: InfoSVG, description: "Do you want to know more about me?" },
   { name: "Experience", href: "/experience", icon: WorkHistorySVG, description: "Are you interested in my experience" },
   { name: "Projects", href: "/projects", icon: ProjectHistorySVG, description: "Have you seen my projects?" },
 ];

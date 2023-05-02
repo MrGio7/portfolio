@@ -23,15 +23,7 @@ export interface FlyOutMenuProps {
 export const FlyOutMenu: FC<FlyOutMenuProps> = ({ solutions, callsToAction }) => {
   return (
     <Popover className="lg:hidden">
-      <Popover.Button className="inline-flex items-center gap-x-1 text-4xl font-semibold leading-6 text-gray-900">
-        {({ open }) => {
-          if (open) {
-            return <MenuToCloseSVG />;
-          } else {
-            return <CloseToMenuSVG />;
-          }
-        }}
-      </Popover.Button>
+      <Popover.Button className="inline-flex items-center gap-x-1 text-4xl font-semibold leading-6 text-gray-900">{({ open }) => (open ? <MenuToCloseSVG /> : <CloseToMenuSVG />)}</Popover.Button>
 
       <Transition
         as={Fragment}
@@ -46,7 +38,7 @@ export const FlyOutMenu: FC<FlyOutMenuProps> = ({ solutions, callsToAction }) =>
           <section className="flex-auto overflow-hidden rounded-3xl bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
             <ul className="p-2">
               {solutions.map((item) => (
-                <li key={item.name} className="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
+                <li key={item.name} className="group relative flex gap-x-2 rounded-lg p-4 hover:bg-gray-50">
                   <item.icon className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" aria-hidden="true" />
                   <div>
                     <a href={item.href} className="font-semibold text-gray-900">
