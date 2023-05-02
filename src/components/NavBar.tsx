@@ -1,9 +1,9 @@
-import { ContactSVG, HomeSVG, InfoSVG, LinkedinSVG, LogoSVG, ProjectHistorySVG, WorkHistorySVG } from "@/assets/svg";
+import { GithubSVG, HomeSVG, InfoSVG, LinkedinSVG, LogoSVG, ProjectHistorySVG, WorkHistorySVG } from "@/assets/svg";
+import FlyOutMenu, { FlyOutMenuProps } from "@/elements/menus/FlyOutMenu";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
-import Contact from "../Contact";
-import FlyOutMenu, { FlyOutMenuProps } from "@/elements/menus/FlyOutMenu";
+import Contact from "./Contact";
 
 interface NavBarProps {}
 
@@ -15,14 +15,13 @@ const navigation: FlyOutMenuProps["solutions"] = [
 ];
 
 const callsToAction: FlyOutMenuProps["callsToAction"] = [
-  { href: "#", icon: ContactSVG, name: "Give Star" },
+  { href: "#", icon: GithubSVG, name: "Give Star" },
   { href: "#", icon: LinkedinSVG, name: "My Linkedin" },
 ];
 
 const NavBar: React.FC<NavBarProps> = () => {
   const router = useRouter();
   const contactIsOpen = "contact" in router.query;
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   return (
     <nav className="mt-2 grid grid-cols-7 grid-rows-1 items-center justify-items-center">
