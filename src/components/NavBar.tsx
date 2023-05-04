@@ -1,4 +1,4 @@
-import { GithubSVG, HomeSVG, InfoSVG, LinkedinSVG, LogoSVG, ProjectHistorySVG, WorkHistorySVG } from "@/assets/svg";
+import { GithubSVG, HomeSVG, InfoSVG, LinkedinSVG, LogoSVG, ProjectHistorySVG, SkillsSVG, WorkHistorySVG } from "@/assets/svg";
 import FlyOutMenu, { FlyOutMenuProps } from "@/elements/menus/FlyOutMenu";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -10,13 +10,14 @@ interface NavBarProps {}
 const navigation: FlyOutMenuProps["solutions"] = [
   { name: "Home", href: "/", icon: HomeSVG, description: "Go to home page" },
   { name: "About Me", href: "/about", icon: InfoSVG, description: "Do you want to know more about me?" },
+  { name: "My Skills", href: "/skills", icon: SkillsSVG, description: "Check out my skills!" },
   { name: "Experience", href: "/experience", icon: WorkHistorySVG, description: "Are you interested in my experience" },
   { name: "Projects", href: "/projects", icon: ProjectHistorySVG, description: "Have you seen my projects?" },
 ];
 
 const callsToAction: FlyOutMenuProps["callsToAction"] = [
-  { href: "#", icon: GithubSVG, name: "Give Star" },
-  { href: "#", icon: LinkedinSVG, name: "My Linkedin" },
+  { href: "https://github.com/MrGio7", icon: GithubSVG, name: "Give Star" },
+  { href: "https://www.linkedin.com/in/giorgi-bakashvili/", icon: LinkedinSVG, name: "My Linkedin" },
 ];
 
 const NavBar: React.FC<NavBarProps> = () => {

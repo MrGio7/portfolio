@@ -1,10 +1,10 @@
-import Image, { StaticImageData } from "next/image";
-import ProfilePicture from "@/assets/images/profile.webp";
 import MeetingStockImage from "@/assets/images/meeting-stock-image.webp";
+import ProfilePicture from "@/assets/images/profile.webp";
 import TegetaApprovedImage from "@/assets/images/tegetaapproved.webp";
-import Link from "next/link";
 import { ProjectHistorySVG } from "@/assets/svg";
 import ProjectCard from "@/elements/cards/project";
+import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 
 const skills = [
   {

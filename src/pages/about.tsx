@@ -1,15 +1,11 @@
-import Image from "next/image";
-import React from "react";
 import AboutCard, { AboutCardProps } from "@/elements/cards/about";
 
 import CodePicture from "@/assets/images/about/code.webp";
-import WorkingPicture from "@/assets/images/about/working.webp";
+import ContactPicture from "@/assets/images/about/contact.webp";
 import HobbyPicture from "@/assets/images/about/hobby.webp";
 import TeamWorkPicture from "@/assets/images/about/teamwork.webp";
+import WorkingPicture from "@/assets/images/about/working.webp";
 import WorkingAlonePicture from "@/assets/images/about/workingalone.webp";
-import ContactPicture from "@/assets/images/about/contact.webp";
-
-interface AboutProps {}
 
 const aboutCards: AboutCardProps[] = [
   {
@@ -38,7 +34,7 @@ const aboutCards: AboutCardProps[] = [
   },
 ];
 
-const About: React.FC<AboutProps> = () => {
+export default function About() {
   return (
     <main className="flex flex-col items-center px-5">
       <h1 className="my-8 text-5xl font-bold">About Me</h1>
@@ -47,6 +43,4 @@ const About: React.FC<AboutProps> = () => {
       ))}
     </main>
   );
-};
-
-export default About;
+}
