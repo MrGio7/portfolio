@@ -6,11 +6,12 @@ import HobbyPicture from "@/assets/images/about/hobby.webp";
 import TeamWorkPicture from "@/assets/images/about/teamwork.webp";
 import WorkingPicture from "@/assets/images/about/working.webp";
 import WorkingAlonePicture from "@/assets/images/about/workingalone.webp";
+import { yearsOfExperience } from "@/utils/common";
 
 const aboutCards: AboutCardProps[] = [
   {
     image: CodePicture,
-    text: "Hi there, my name is Giorgi Bakashvili and I'm a full stack developer with 3+ years of experience working with JavaScript and TypeScript.\nI have experience working on both commercial and freelance projects, which has allowed me to develop a diverse skill set and a strong work ethic.",
+    text: `Hi there, my name is Giorgi Bakashvili and I'm a full stack developer with ${yearsOfExperience} years of experience working with JavaScript and TypeScript.\nI have experience working on both commercial and freelance projects, which has allowed me to develop a diverse skill set and a strong work ethic.`,
   },
   {
     image: WorkingPicture,

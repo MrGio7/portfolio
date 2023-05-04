@@ -3,6 +3,7 @@ import ProfilePicture from "@/assets/images/profile.webp";
 import TegetaApprovedImage from "@/assets/images/tegetaapproved.webp";
 import { ProjectHistorySVG } from "@/assets/svg";
 import ProjectCard from "@/elements/cards/project";
+import { yearsOfExperience } from "@/utils/common";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 
@@ -58,7 +59,7 @@ export default function Home() {
         <section className="relative h-80 w-full">
           <Image src={ProfilePicture} alt="Profile Picture" className="absolute bottom-0 left-1/4 -z-10 w-[600px] max-w-none lg:w-[850px]" />
           <div className="absolute bottom-5 left-0 rounded-xl bg-slate-900 px-5 py-4 text-white">
-            <h1 className="text-4xl leading-9">2+</h1>
+            <h1 className="text-4xl leading-9">{yearsOfExperience}</h1>
             <h2 className="leading-4">years experience</h2>
           </div>
         </section>
