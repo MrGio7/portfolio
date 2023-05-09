@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
 import ContactModal from "./Modal";
+import { classNames } from "@/utils/common";
 
 interface NavBarProps {}
 
@@ -26,20 +27,18 @@ const NavBar: React.FC<NavBarProps> = () => {
 
   return (
     <nav className="mt-2 grid grid-cols-7 grid-rows-1 items-center justify-items-center">
-      <ul className="hidden flex-row items-center gap-4 lg:flex xl:gap-8">
-        {navigation
-          .filter((route) => route.href !== router.pathname)
-          .map((nav, index) => (
-            <Link key={index} href={nav.href}>
-              {nav.name}
-            </Link>
-          ))}
+      <ul className="col-start-1 col-end-4 hidden flex-row items-center gap-4 lg:flex">
+        {navigation.map((nav, index) => (
+          <Link key={index} href={nav.href} className={classNames(nav.href === router.pathname && "font-bold")}>
+            {nav.name}
+          </Link>
+        ))}
       </ul>
       <FlyOutMenu solutions={navigation.filter((route) => route.href !== router.pathname)} callsToAction={callsToAction} />
       <div className="col-start-4 rounded-2xl bg-black px-2 py-3">
         <LogoSVG className="w-8 text-white lg:w-10" />
       </div>
-      <Link href={!contactIsOpen ? "?contact" : ""} className="col-start-5 col-end-8 rounded-full bg-gray-200 px-7 py-3 text-xs lg:text-sm">
+      <Link href={!contactIsOpen ? "?contact" : ""} className="col-start-5 col-end-8 rounded-full bg-gray-200 px-7 py-3 text-xs lg:col-start-6 lg:text-sm">
         Contact Me
       </Link>
       <ContactModal className="rounded" isActive={contactIsOpen} onClose={() => router.push("")}>
