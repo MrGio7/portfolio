@@ -1,10 +1,9 @@
-import MeetingStockImage from "@/assets/images/meeting-stock-image.webp";
+import { projects } from "@/assets/data/projects";
 import ProfilePicture from "@/assets/images/profile.webp";
-import TegetaApprovedImage from "@/assets/images/tegetaapproved.webp";
 import { ProjectHistorySVG } from "@/assets/svg";
 import ProjectCard from "@/elements/cards/project";
 import { yearsOfExperience } from "@/utils/common";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 
 const skills = [
@@ -23,17 +22,6 @@ const skills = [
   {
     name: "React",
     color: "#61DAFB",
-  },
-];
-
-const projects: { name: string; image: StaticImageData }[] = [
-  {
-    name: "Vidvely",
-    image: MeetingStockImage,
-  },
-  {
-    name: "Tegeta Approved",
-    image: TegetaApprovedImage,
   },
 ];
 
@@ -75,9 +63,9 @@ export default function Home() {
           </div>
           <ProjectHistorySVG className="rounded-md bg-slate-900 p-1 text-4xl text-white" />
         </header>
-        <main className="my-8 flex flex-col gap-y-10 px-20">
-          {projects.map(({ image, name }, index) => (
-            <ProjectCard key={index} name={name} image={image} index={`0${index + 1}`} />
+        <main className="my-8 flex flex-col gap-y-10 px-10">
+          {projects.map((project, index) => (
+            <ProjectCard key={index} index={`0${index + 1}`} {...project} />
           ))}
         </main>
       </section>

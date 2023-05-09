@@ -3,7 +3,7 @@ import FlyOutMenu, { FlyOutMenuProps } from "@/elements/menus/FlyOutMenu";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
-import Contact from "./Contact";
+import ContactModal from "./Modal";
 
 interface NavBarProps {}
 
@@ -39,10 +39,13 @@ const NavBar: React.FC<NavBarProps> = () => {
       <div className="col-start-4 rounded-2xl bg-black px-2 py-3">
         <LogoSVG className="w-8 text-white lg:w-10" />
       </div>
-      <Link href="?contact" className="col-start-5 col-end-8 rounded-full bg-gray-200 px-7 py-3 text-xs lg:text-sm">
+      <Link href={!contactIsOpen ? "?contact" : ""} className="col-start-5 col-end-8 rounded-full bg-gray-200 px-7 py-3 text-xs lg:text-sm">
         Contact Me
       </Link>
-      {contactIsOpen && <Contact />}
+      <ContactModal className="rounded" isActive={contactIsOpen} onClose={() => router.push("")}>
+        <h1 className="text-2xl font-bold">Contact Me</h1>
+        <p className="text-slate-600">I am Full Stack Developer</p>
+      </ContactModal>
     </nav>
   );
 };
