@@ -151,8 +151,9 @@ export const LinkedinSVG: FC<SVGAttributes<SVGSVGElement>> = (props) => (
   </svg>
 );
 
-export const DogSVG: FC<SVGAttributes<SVGSVGElement>> = (props) => (
+export const DogSVG: FC<SVGAttributes<SVGSVGElement> & { bgColor?: string }> = ({ bgColor, ...props }) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512" {...props}>
+    <rect width="6em" height="6em" fill={bgColor} x="2.5em" y="2em" />
     <path
       fill="currentColor"
       d="M269.4 2.9C265.2 1 260.7 0 256 0s-9.2 1-13.4 2.9L54.3 82.8c-22 9.3-38.4 31-38.3 57.2c.5 99.2 41.3 280.7 213.6 363.2c16.7 8 36.1 8 52.8 0C454.7 420.7 495.5 239.2 496 140c.1-26.2-16.3-47.9-38.3-57.2L269.4 2.9zM160.9 286.2c4.8 1.2 9.9 1.8 15.1 1.8c35.3 0 64-28.7 64-64v-64h44.2c12.1 0 23.2 6.8 28.6 17.7L320 192h64c8.8 0 16 7.2 16 16v32c0 44.2-35.8 80-80 80h-48v50.7c0 7.3-5.9 13.3-13.3 13.3c-1.8 0-3.6-.4-5.2-1.1l-98.7-42.3c-6.6-2.8-10.8-9.3-10.8-16.4c0-2.8.6-5.5 1.9-8l15-30zM160 160h48v64c0 17.7-14.3 32-32 32s-32-14.3-32-32v-48c0-8.8 7.2-16 16-16zm128 48a16 16 0 1 0-32 0a16 16 0 1 0 32 0z"
@@ -160,8 +161,9 @@ export const DogSVG: FC<SVGAttributes<SVGSVGElement>> = (props) => (
   </svg>
 );
 
-export const LinkSVG: FC<SVGAttributes<SVGSVGElement>> = (props) => (
+export const LinkSVG: FC<SVGAttributes<SVGSVGElement> & { bgColor?: string }> = ({ bgColor, ...props }) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" {...props}>
+    <rect width="0.3em" height="0.3em" fill={bgColor} x="0.1em" y="0.1em" />
     <path
       fill="currentColor"
       d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m-5.06 11.81L11.73 17c-.65.67-1.51 1-2.37 1c-.86 0-1.72-.33-2.36-1c-1.33-1.29-1.33-3.42 0-4.74l1.35-1.36l-.01.6c-.01.5.07 1 .23 1.44l.05.15l-.4.41a1.597 1.597 0 0 0 0 2.28c.61.62 1.67.62 2.28 0l2.2-2.19c.3-.31.48-.72.48-1.15c0-.44-.18-.83-.48-1.14a.87.87 0 0 1 0-1.24c.33-.33.91-.32 1.24 0c.63.64.98 1.48.98 2.38c0 .9-.35 1.74-.98 2.37M17 11.74l-1.34 1.36v-.6c.01-.5-.07-1-.23-1.44l-.05-.14l.4-.42a1.597 1.597 0 0 0 0-2.28c-.61-.62-1.68-.61-2.28 0l-2.2 2.2c-.3.3-.48.71-.48 1.14c0 .44.18.83.48 1.14c.17.16.26.38.26.62s-.09.46-.26.62a.86.86 0 0 1-.62.25c-.22 0-.45-.08-.62-.25a3.362 3.362 0 0 1 0-4.75L12.27 7A3.311 3.311 0 0 1 17 7c.65.62 1 1.46 1 2.36c0 .9-.35 1.74-1 2.38Z"

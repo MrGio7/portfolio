@@ -2,6 +2,7 @@ import { StaticImageData } from "next/image";
 
 import MeetingImg from "@/assets/images/projects/meeting-stock-image.webp";
 import TegetaApprovedImg from "@/assets/images/projects/tegetaapproved.webp";
+import TriviaImg from "@/assets/images/projects/trivia.webp";
 
 export interface Project {
   name: string;
@@ -32,5 +33,14 @@ export const projects: Project[] = [
     url: "https://tegetaapproved.ge/",
     repo: null,
     tags: ["TypeScript", "NextJs", "NodeJs", "GraphQL", "PostgreSQL", "Serverless", "AWS", "Docker", "etc..."],
+  },
+  {
+    isPet: true,
+    name: "Trivia",
+    description: "This is fully functional trivia game with custom login support",
+    image: TriviaImg,
+    repo: null,
+    url: "https://mrgio7.github.io/trivia/",
+    tags: ["React", "API", "SQLLite"],
   },
 ];

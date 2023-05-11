@@ -15,19 +15,12 @@
   /* Firefox */
 }
 
+html,
+body,
+#__next {
+  height: 100%;
+}
+
 #__next {
   overflow-x: hidden;
 }
-
-/* 
-body::before {
-  content: "";
-  position: absolute;
-  transform: rotate(-45deg);
-  top: -19%;
-  right: -50%;
-  width: 106vw;
-  height: 33vw;
-  background-color: #fe5b02;
-  border-radius: 9999px;
-} */
